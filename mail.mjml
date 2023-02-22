@@ -1,0 +1,42 @@
+<mjml>
+  <mj-head>
+    <mj-title>Nouveau cours en ligne de Symfony - Inscrivez-vous dès maintenant !</mj-title>
+  </mj-head>
+  <mj-body background-color="#F5EAEA">
+  <mj-section>
+    <mj-column>
+      <mj-image width="100px" src="https://www.iim.fr/ecole-web/wp-content/themes/iim/img/footer-iim.png"/>
+      <mj-text font-size="20px" font-family="helvetica">
+        Questionnaire de satisfaction pour le cours de Symfony
+        
+    </mj-column>
+  </mj-section>
+    <mj-section >
+      <mj-column>
+    <mj-divider border-color="#F99417"/>
+      
+
+        <mj-text font-family="helvetica">
+          Bonjour [[NOM]] !
+        </mj-text>
+        <mj-text font-family="helvetica">
+          Il y a 2 semaines vous avez suivi un cours portant sur le framework PHP Symfony et nous aimerions avoir votre avis sur ce cours, ce que vous en pensez en général, la qualité du rendu et de l'enseignement, etc.
+        </mj-text>
+        
+        <mj-text font-family="helvetica">
+          Notre équipe de formateurs experts en Symfony sera à votre disposition pour répondre à toutes vos questions et vous aider à résoudre les problèmes que vous avez pu rencontrer.
+        </mj-text font-family="helvetica">
+        <mj-button href="https://ux-marketing.vercel.app/" font-family="helvetica">
+          Répondre au questionnaire !
+        </mj-button>
+        <mj-text font-family="helvetica">
+          Merci de votre participation !
+          <br/>
+          Cordialement,
+          <br/>
+          Professeur simfony
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
