@@ -97,18 +97,22 @@ textarea {
 .radio-group input[type="radio"] {
   margin-right: 5px;
 }
+
+span{
+  color: red;
+}
 </style>
 <form id="satisfaction-form">
   <fieldset>
     <legend>Formulaire de satisfaction</legend>
 
     <div class="form-group">
-      <label for="contenu">Contenu</label>
+      <label for="contenu">Contenu<span>*</span></label>
       <input type="text" id="contenu" name="contenu" required>
     </div>
 
     <div class="form-group">
-      <legend>Qualité du contenu</legend>
+      <legend>Qualité du contenu<span>*</span></legend>
       <div class="radio-group">
         <label for="excellent">
           <input type="radio" id="excellent" name="evaluation" value="excellent" required>
@@ -135,7 +139,7 @@ textarea {
     
 
     <div class="form-group">
-      <label for="methode">Méthode</label>
+      <label for="methode">Méthode<span>*</span></label>
       <select id="methode" name="methode" required>
         <option value=""></option>
         <option value="en ligne">En ligne</option>
