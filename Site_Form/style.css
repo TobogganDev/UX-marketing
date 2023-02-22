@@ -1,0 +1,125 @@
+body{
+  background-color: #171717;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Style de base pour le formulaire */
+#satisfaction-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style pour les titres */
+legend {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+/* Style pour les champs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.97 7.999H7.03L12 13.471z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+  padding-right: 25px;
+}
+
+textarea {
+  height: 150px;
+}
+
+/* Style pour la barre de progression */
+.progress {
+  height: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #007bff;
+  transition: 0.4s all ease;
+}
+
+/* Style pour le bouton de soumission */
+#submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  background-color: #0069d9;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 100;
+}
+
+.radio-group label:nth-child(1){
+  color: rgb(0, 128, 0);
+}
+.radio-group label:nth-child(2){
+  color: rgb(144, 238, 144);
+}
+.radio-group label:nth-child(3){
+  color: rgb(255, 255, 0);
+}
+.radio-group label:nth-child(4){
+  color: rgb(255, 140, 0);
+}
+.radio-group label:nth-child(5){
+  color: rgb(255, 0, 0);
+}
+
+.radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+span{
+  color: red;
+}
