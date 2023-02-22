@@ -1,125 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-  background-color: #171717;
-  color: #fff;
-  font-family: 'Quicksand', sans-serif;
+    background-color: #1c1c1c;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
 }
 
-/* Style de base pour le formulaire */
-#satisfaction-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+form{
+    width: 40%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 25px 0;
 }
 
-/* Style pour les titres */
-legend {
-  font-weight: 900;
-  margin-bottom: 10px;
+form legend{
+    padding: 10px 15px;
+    border: 2px solid #d6d6d6;
+    border-bottom: 0;
+    font-weight: 800;
 }
 
-/* Style pour les champs */
-.form-group {
-  margin-bottom: 15px;
+.form-group{
+    border: 2px solid #d6d6d6;
+    border-bottom: 0;
+    padding: 10px 15px;
 }
 
-label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-input[type="text"],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.97 7.999H7.03L12 13.471z"/></svg>');
-  background-repeat: no-repeat;
-  background-position: right 8px center;
-  background-size: 12px;
-  padding-right: 25px;
-}
-
-textarea {
-  height: 150px;
-}
-
-/* Style pour la barre de progression */
-.progress {
-  height: 20px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.progress-bar {
-  height: 100%;
-  width: 0%;
-  background-color: #007bff;
-  transition: 0.4s all ease;
-}
-
-/* Style pour le bouton de soumission */
-#submit-btn {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-#submit-btn:hover {
-  background-color: #0069d9;
+.form-group p{
+    margin-bottom: 10px;
 }
 
 .radio-group {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 .radio-group label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  font-weight: 100;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+    cursor: pointer;
 }
 
 .radio-group label:nth-child(1){
-  color: rgb(0, 128, 0);
+    color: rgb(0, 128, 0);
 }
 .radio-group label:nth-child(2){
-  color: rgb(144, 238, 144);
+    color: rgb(144, 238, 144);
 }
 .radio-group label:nth-child(3){
-  color: rgb(255, 255, 0);
+    color: rgb(255, 255, 0);
 }
 .radio-group label:nth-child(4){
-  color: rgb(255, 140, 0);
+    color: rgb(255, 140, 0);
 }
 .radio-group label:nth-child(5){
-  color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+}
+.radio-group input[type="radio"] {
+    margin-right: 5px;
 }
 
-.radio-group input[type="radio"] {
-  margin-right: 5px;
+select{
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: #d6d6d6;
+    font-family: 'Rubik', sans-serif;
+}
+
+.form-group:nth-child(5){
+    border: 2px solid #d6d6d6;
 }
 
 span{
-  color: red;
+    color: red;
+}
+
+.custom-select {
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    background-color: transparent;
+    padding: 18px 50px !important;
+    border: 2px solid #d6d6d6;
+    border-bottom: 0;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after{
+    position: absolute;
+    content: "";
+    top: 30px;
+    right: 30px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #d6d6d6 transparent transparent transparent;
+}
+
+.select-selected:hover:after {
+    border-color: #1c1c1c transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #d6d6d6 transparent;
+    top: 22px;
+}
+
+.select-selected.select-arrow-active:after, .select-selected.select-arrow-active:hover:after {
+    border-color: transparent transparent #1c1c1c transparent;
+    top: 22px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 35px;
+    cursor: pointer;
+}
+
+.select-items div{
+    border-bottom: 2px solid #d6d6d6;
+    transition: 0.45s ease;
+}
+
+.select-items div:nth-child(1){
+    border-top: 2px solid #d6d6d6;
+}
+
+/* Style items (options): */
+.select-items {
+    border: 2px solid #d6d6d6;
+    position: absolute;
+    background-color: #1c1c1c;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: 0.6s all ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    z-index: -1000;
+    opacity: 0;
+    transform: translateY(-150px);
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: #d6d6d6;
+    color: #1c1c1c;
+    transition: 0.45s ease;
+}
+
+textarea{
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+}
+
+button{
+    border: 2px solid #d6d6d6;
+    background-color: transparent;
+    margin-top: 50px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 800;
+    font-size: 1.7rem;
+    height: 10%;
+    width: 30%;
+    margin-left: 35%;
+    transition: 0.45s ease;
+}
+
+button:hover, .select-selected:hover{
+    background-color: #d6d6d6;
+    color: #1c1c1c;
+    transition: 0.45s ease;
 }
